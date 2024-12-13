@@ -1,6 +1,6 @@
-document.querySelectorAll('.text').forEach(function(event){
+document.querySelectorAll('.js-text').forEach(function(event){
     new Typed(event,{
-    Strings:['Frontend Developer','YouTuber','Web Developer'],
+    strings:['Frontend Developer','Web Developer'],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
