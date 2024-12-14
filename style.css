@@ -255,23 +255,23 @@ section{
     font-size: 23px;
 }
 
-.technical-bars.bar{
+.technical-bars .bar{
     margin-top: 40px 0;
 }
-.technical-bars.bar:first-child{
+.technical-bars .bar:first-child{
     margin-top: 0;
 }
-.technical-bars.bar:last-child{
+.technical-bars .bar:last-child{
     margin-bottom: 0;
 }
-.technical-bars.bar.info{
+.technical-bars .bar .info{
     margin-bottom: 5px;
 }
 .technical-bars .bar .info span{
     font-size: 17px;
     font-weight: 500;
-    animation: showText 0.5s is linear forwards;
-    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 1;
 }
 .technical-bars .bar .progress-line{
     position: relative;
@@ -280,7 +280,7 @@ section{
     height: 5px;
     background-color: #000000;
     animation: animate is cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
+    transform: scaleX(1);
     transform-origin: left;
 }
 
@@ -290,12 +290,12 @@ section{
     }
 }
 
-.technical-bars.bar.progress-line span{
+.technical-bars .bar .progress-line span{
     height: 100%;
     background-color: #0ef;
     position: absolute;
     border-radius: 10px;
-    animation: animate is is cubic-bezier(1,0,0,5,1) forwards;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
     transform: scaleX(0);
     transform-origin: left;
 }
@@ -305,8 +305,8 @@ section{
 .progress-line.css span{
     width: 60%;
 }
-.progress-line.javaScript{
-    width: 80%;
+.progress-line.javaScript span{
+    width: 70%;
 }
 .progress-line span::after{
     position: absolute;
@@ -327,7 +327,7 @@ section{
     content: '60%';
 }
 .progress-line.javaScript span::after{
-    content: 85%;
+    content: '85%';
 }
 .progress-line span::before{
     content: "";
@@ -440,10 +440,10 @@ section{
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(359px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(359px,auto));
 }
 .row{
-    position: absolute;
+    position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
