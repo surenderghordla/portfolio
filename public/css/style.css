@@ -5,6 +5,11 @@
   scroll-behavior: smooth;
   font-family: "poppins", sans-serif;
 }
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem 1rem;
+}
 body {
   color: #ededed;
   background: #081b29;
@@ -14,7 +19,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10px;
+  padding: 1rem 2rem;
   background: #081b29;
   display: flex;
   justify-content: space-between;
@@ -23,7 +28,7 @@ body {
 }
 .logo {
   position: relative;
-  font-size: 25px;
+  font-size: 2rem;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -33,11 +38,11 @@ body {
 }
 .navbar a {
   display: inline-block;
-  font-size: 25px;
+  font-size: 2rem;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 35px;
+  margin-left: .8rem;
   transition: 0.3s;
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
@@ -50,18 +55,17 @@ body {
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url("./images/Purple\ Illustrated\ Mountain.png") no-repeat;
+  background: url("../images/Purple\ Illustrated\ Mountain.png") no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  padding: 70px 10% 0;
 }
 .home-content {
-  max-width: 600px;
+  max-width: 550px;
 }
 .home-content h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   opacity: 1;
   animation: slideBottom is ease forwards;
@@ -74,7 +78,7 @@ body {
   color: #0ef;
 }
 .home-content h1 {
-  font-size: 56px;
+  font-size: 3rem;
   font-weight: 700;
   margin: -3px 0;
   opacity: 1;
@@ -127,84 +131,76 @@ body {
 }
 
 .about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* grid-template-columns: repeat(2, 1fr); */
   align-items: center;
   gap: 1.5rem;
 }
-.about-img img {
-  padding-bottom: 20px;
-  max-width: 630px;
-  height: auto;
-  width: 70%;
-  border-radius: 8px;
-}
 .about-text h2 {
-  font-size: 60px;
+  font-size: 3rem;
 }
 .about-text h2 span {
   color: #0ef;
 }
 .about-text h4 {
-  font-size: 29px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
-  line-height: 1.7;
+  line-height: 1.5;
   margin: 15px 0 30px;
 }
 .about-text p {
   color: aliceblue;
-  font-size: 20px;
+  font-size: 1.3rem;
   line-height: 1.4;
   margin-bottom: 4rem;
 }
 
-.services {
-  color: aliceblue;
-  font-size: 20px;
-  line-height: 1.4;
-  margin-bottom: 4rem;
-}
 .sub-title {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  font-size: 60px;
-  padding-bottom: 70px;
+  font-size: 3rem;
+  margin: 2rem 0;
 }
 .sub-title span {
   color: #0ef;
 }
-.container {
-  padding: 90px;
-}
+
 .services-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+  display: flex;
   grid-gap: 40px;
-  margin-top: 50px;
+  margin-top: 1rem;
+  width: 100%;
 }
 .services-list div {
+  justify-content: center;
   background-color: transparent;
-  padding: 40px;
-  font-size: 13rem;
+  height: 400px;
+  padding: 1rem;
+  font-size: 1rem;
   font-weight: 13px;
   border-right: 10px;
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s;
   box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+  margin-bottom: 2rem 2rem;
 }
-.services-list div {
-  font-size: 50px;
-  margin-bottom: 30px;
-}
+
 .services-list div h2 {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin: 1rem 0;
+}
+.services-list div p{
+  font-size: 1.5rem;
 }
 .services-list div a {
   text-decoration: none;
   color: #000000;
-  font-size: 12px;
+  font-size: .8rem;
   margin-top: 20px;
   display: inline-block;
 }
@@ -213,7 +209,7 @@ body {
   padding: 12px 28px;
   background: #0ef;
   border-radius: 40px;
-  font-size: 16px;
+  font-size: 1rem;
   color: #081b29;
   letter-spacing: 1px;
   text-decoration: none;
@@ -236,9 +232,9 @@ section {
   flex-wrap: wrap;
 }
 .container1 {
-  width: 600px;
+  width: 800px;
   height: 500px;
-  padding: 75px 90px;
+  padding: 30px 90px;
   margin-left: 120px;
 }
 .heading1 {
@@ -247,6 +243,7 @@ section {
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
   margin-bottom: 50px;
+  font-size: 2rem;
 }
 .heading1 span {
   color: #0ef;
@@ -370,7 +367,7 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
-  width: 120px;
+  width: 130px;
   height: 160px;
 }
 .radial-bars .radial-bar .progress-bar {
@@ -439,12 +436,21 @@ section {
   opacity: 0;
 }
 
+.radial-bar .text{
+  display: flex;
+  justify-content: center;
+}
+
+
 .main-text {
   margin-top: 350px;
   width: 100%;
 }
 .main-text h2 {
-  font-size: 60px;
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
   line-height: 4;
   text-align: center;
 }
@@ -453,9 +459,8 @@ section {
 }
 .portfolio-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 2rem;
-  margin: 0 1rem;
 }
 .row {
   position: relative;
@@ -519,14 +524,15 @@ section {
 
 .contact {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto minmax(16rem 1fr));
   align-items: center;
-  gap: 3rem;
-  padding-left: 30px;
-  margin-top: 130px;
+  gap: 1fr;
+  margin-top: 5rem;
 }
 .contact-text h2 {
-  font-size: 90px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
   line-height: 2;
   text-align: center;
 }
@@ -536,7 +542,7 @@ section {
 .contact-text h4 {
   margin: 15px 0;
   color: rgb(228, 228, 228);
-  font-size: 20px;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 .contact-text p {
@@ -593,13 +599,13 @@ section {
 form textarea {
   border: none;
   outline: none;
-  width: 90%;
-  padding: 18px;
-  background: #555557;
+  width: 100%;
+  padding: 1rem;
+  background: #fff;
   color: #000;
   font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
   border-radius: 0.5rem;
 }
 .contact-form textarea {
